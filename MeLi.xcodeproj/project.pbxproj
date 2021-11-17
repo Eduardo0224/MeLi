@@ -7,20 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0016D402744A221002F497E /* StoryboardedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0016D3F2744A221002F497E /* StoryboardedProtocol.swift */; };
+		A0016D442744A6F9002F497E /* UIViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0016D432744A6F9002F497E /* UIViewController+NavigationBar.swift */; };
+		A0016D462744A7B1002F497E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0016D452744A7B1002F497E /* Colors.xcassets */; };
+		A0016D492744AEB4002F497E /* Harabara Mais Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0016D482744AEB4002F497E /* Harabara Mais Demo.otf */; };
+		A0016D4B2745228E002F497E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0016D4A2745228E002F497E /* Constants.swift */; };
 		A0A35F08274494A800040D8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A35F07274494A800040D8B /* AppDelegate.swift */; };
 		A0A35F0A274494A800040D8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A35F09274494A800040D8B /* SceneDelegate.swift */; };
-		A0A35F0C274494A800040D8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A35F0B274494A800040D8B /* ViewController.swift */; };
-		A0A35F0F274494A800040D8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0A35F0D274494A800040D8B /* Main.storyboard */; };
+		A0A35F0C274494A800040D8B /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A35F0B274494A800040D8B /* ProductsListViewController.swift */; };
+		A0A35F0F274494A800040D8B /* ProductsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0A35F0D274494A800040D8B /* ProductsList.storyboard */; };
 		A0A35F11274494AC00040D8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0A35F10274494AC00040D8B /* Assets.xcassets */; };
 		A0A35F14274494AC00040D8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0A35F12274494AC00040D8B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0016D3F2744A221002F497E /* StoryboardedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardedProtocol.swift; sourceTree = "<group>"; };
+		A0016D432744A6F9002F497E /* UIViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBar.swift"; sourceTree = "<group>"; };
+		A0016D452744A7B1002F497E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		A0016D482744AEB4002F497E /* Harabara Mais Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Harabara Mais Demo.otf"; sourceTree = "<group>"; };
+		A0016D4A2745228E002F497E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A0A35F04274494A800040D8B /* MeLi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeLi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A35F07274494A800040D8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0A35F09274494A800040D8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A0A35F0B274494A800040D8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A0A35F0E274494A800040D8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0A35F0B274494A800040D8B /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
+		A0A35F0E274494A800040D8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ProductsList.storyboard; sourceTree = "<group>"; };
 		A0A35F10274494AC00040D8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0A35F13274494AC00040D8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0A35F15274494AC00040D8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +47,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0016D3827449FD1002F497E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A0016D3927449FDB002F497E /* Search */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A0016D3927449FDB002F497E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				A0016D3B27449FE9002F497E /* Model */,
+				A0016D3A27449FE3002F497E /* View */,
+				A0016D3C27449FF0002F497E /* ViewModel */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		A0016D3A27449FE3002F497E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0A35F0B274494A800040D8B /* ProductsListViewController.swift */,
+				A0A35F0D274494A800040D8B /* ProductsList.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0016D3B27449FE9002F497E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0016D3C27449FF0002F497E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A0016D3D2744A1EB002F497E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A0A35F07274494A800040D8B /* AppDelegate.swift */,
+				A0A35F09274494A800040D8B /* SceneDelegate.swift */,
+				A0A35F10274494AC00040D8B /* Assets.xcassets */,
+				A0016D452744A7B1002F497E /* Colors.xcassets */,
+				A0A35F12274494AC00040D8B /* LaunchScreen.storyboard */,
+				A0A35F15274494AC00040D8B /* Info.plist */,
+				A0016D3E2744A1FC002F497E /* Utils */,
+				A0016D472744AE8D002F497E /* Fonts */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A0016D3E2744A1FC002F497E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A0016D3F2744A221002F497E /* StoryboardedProtocol.swift */,
+				A0016D432744A6F9002F497E /* UIViewController+NavigationBar.swift */,
+				A0016D4A2745228E002F497E /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A0016D472744AE8D002F497E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A0016D482744AEB4002F497E /* Harabara Mais Demo.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		A0A35EFB274494A800040D8B = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +140,8 @@
 		A0A35F06274494A800040D8B /* MeLi */ = {
 			isa = PBXGroup;
 			children = (
-				A0A35F07274494A800040D8B /* AppDelegate.swift */,
-				A0A35F09274494A800040D8B /* SceneDelegate.swift */,
-				A0A35F0B274494A800040D8B /* ViewController.swift */,
-				A0A35F0D274494A800040D8B /* Main.storyboard */,
-				A0A35F10274494AC00040D8B /* Assets.xcassets */,
-				A0A35F12274494AC00040D8B /* LaunchScreen.storyboard */,
-				A0A35F15274494AC00040D8B /* Info.plist */,
+				A0016D3D2744A1EB002F497E /* App */,
+				A0016D3827449FD1002F497E /* Modules */,
 			);
 			path = MeLi;
 			sourceTree = "<group>";
@@ -126,8 +205,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0A35F14274494AC00040D8B /* LaunchScreen.storyboard in Resources */,
+				A0016D462744A7B1002F497E /* Colors.xcassets in Resources */,
 				A0A35F11274494AC00040D8B /* Assets.xcassets in Resources */,
-				A0A35F0F274494A800040D8B /* Main.storyboard in Resources */,
+				A0A35F0F274494A800040D8B /* ProductsList.storyboard in Resources */,
+				A0016D492744AEB4002F497E /* Harabara Mais Demo.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +219,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0A35F0C274494A800040D8B /* ViewController.swift in Sources */,
+				A0A35F0C274494A800040D8B /* ProductsListViewController.swift in Sources */,
+				A0016D402744A221002F497E /* StoryboardedProtocol.swift in Sources */,
 				A0A35F08274494A800040D8B /* AppDelegate.swift in Sources */,
+				A0016D4B2745228E002F497E /* Constants.swift in Sources */,
+				A0016D442744A6F9002F497E /* UIViewController+NavigationBar.swift in Sources */,
 				A0A35F0A274494A800040D8B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,12 +231,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A0A35F0D274494A800040D8B /* Main.storyboard */ = {
+		A0A35F0D274494A800040D8B /* ProductsList.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A0A35F0E274494A800040D8B /* Base */,
 			);
-			name = Main.storyboard;
+			name = ProductsList.storyboard;
 			sourceTree = "<group>";
 		};
 		A0A35F12274494AC00040D8B /* LaunchScreen.storyboard */ = {
@@ -291,10 +375,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V8BCKJ57FF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MeLi/Info.plist;
+				INFOPLIST_FILE = MeLi/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = ProductsList;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -307,7 +392,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,10 +405,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V8BCKJ57FF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MeLi/Info.plist;
+				INFOPLIST_FILE = MeLi/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = ProductsList;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -336,7 +422,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
