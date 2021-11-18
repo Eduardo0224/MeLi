@@ -12,6 +12,9 @@
 		A0016D462744A7B1002F497E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0016D452744A7B1002F497E /* Colors.xcassets */; };
 		A0016D492744AEB4002F497E /* Harabara Mais Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0016D482744AEB4002F497E /* Harabara Mais Demo.otf */; };
 		A0016D4B2745228E002F497E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0016D4A2745228E002F497E /* Constants.swift */; };
+		A0016D4E274529B5002F497E /* MeLiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0016D4D274529B5002F497E /* MeLiAPI.swift */; };
+		A024583E2745DBAD0038BCD4 /* MeLiAPI+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A024583D2745DBAD0038BCD4 /* MeLiAPI+Extensions.swift */; };
+		A02458402745DC500038BCD4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A024583F2745DC500038BCD4 /* Extensions.swift */; };
 		A0A35F08274494A800040D8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A35F07274494A800040D8B /* AppDelegate.swift */; };
 		A0A35F0A274494A800040D8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A35F09274494A800040D8B /* SceneDelegate.swift */; };
 		A0A35F0C274494A800040D8B /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A35F0B274494A800040D8B /* ProductsListViewController.swift */; };
@@ -26,6 +29,9 @@
 		A0016D452744A7B1002F497E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		A0016D482744AEB4002F497E /* Harabara Mais Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Harabara Mais Demo.otf"; sourceTree = "<group>"; };
 		A0016D4A2745228E002F497E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A0016D4D274529B5002F497E /* MeLiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeLiAPI.swift; sourceTree = "<group>"; };
+		A024583D2745DBAD0038BCD4 /* MeLiAPI+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeLiAPI+Extensions.swift"; sourceTree = "<group>"; };
+		A024583F2745DC500038BCD4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A0A35F04274494A800040D8B /* MeLi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeLi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A35F07274494A800040D8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0A35F09274494A800040D8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +67,7 @@
 				A0016D3B27449FE9002F497E /* Model */,
 				A0016D3A27449FE3002F497E /* View */,
 				A0016D3C27449FF0002F497E /* ViewModel */,
+				A0016D4F27452DEF002F497E /* Connection */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -109,6 +116,7 @@
 				A0016D3F2744A221002F497E /* StoryboardedProtocol.swift */,
 				A0016D432744A6F9002F497E /* UIViewController+NavigationBar.swift */,
 				A0016D4A2745228E002F497E /* Constants.swift */,
+				A024583F2745DC500038BCD4 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -119,6 +127,22 @@
 				A0016D482744AEB4002F497E /* Harabara Mais Demo.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A0016D4C2745299F002F497E /* MeLiAPI */ = {
+			isa = PBXGroup;
+			children = (
+				A0016D4D274529B5002F497E /* MeLiAPI.swift */,
+				A024583D2745DBAD0038BCD4 /* MeLiAPI+Extensions.swift */,
+			);
+			path = MeLiAPI;
+			sourceTree = "<group>";
+		};
+		A0016D4F27452DEF002F497E /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Connection;
 			sourceTree = "<group>";
 		};
 		A0A35EFB274494A800040D8B = {
@@ -140,6 +164,7 @@
 		A0A35F06274494A800040D8B /* MeLi */ = {
 			isa = PBXGroup;
 			children = (
+				A0016D4C2745299F002F497E /* MeLiAPI */,
 				A0016D3D2744A1EB002F497E /* App */,
 				A0016D3827449FD1002F497E /* Modules */,
 			);
@@ -221,10 +246,13 @@
 			files = (
 				A0A35F0C274494A800040D8B /* ProductsListViewController.swift in Sources */,
 				A0016D402744A221002F497E /* StoryboardedProtocol.swift in Sources */,
+				A0016D4E274529B5002F497E /* MeLiAPI.swift in Sources */,
+				A024583E2745DBAD0038BCD4 /* MeLiAPI+Extensions.swift in Sources */,
 				A0A35F08274494A800040D8B /* AppDelegate.swift in Sources */,
 				A0016D4B2745228E002F497E /* Constants.swift in Sources */,
 				A0016D442744A6F9002F497E /* UIViewController+NavigationBar.swift in Sources */,
 				A0A35F0A274494A800040D8B /* SceneDelegate.swift in Sources */,
+				A02458402745DC500038BCD4 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
