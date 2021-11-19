@@ -24,6 +24,8 @@
 		A03433CB27461084008879F6 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03433C927461084008879F6 /* ProductCollectionViewCell.swift */; };
 		A03433CE27472CE9008879F6 /* UICollectionViewDiffableDataSource+Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03433CD27472CE9008879F6 /* UICollectionViewDiffableDataSource+Product.swift */; };
 		A03433D027472F17008879F6 /* ProductsList+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03433CF27472F16008879F6 /* ProductsList+Layout.swift */; };
+		A03433D227473647008879F6 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03433D127473647008879F6 /* ImageDownloader.swift */; };
+		A03433D4274738E0008879F6 /* UIImageView+Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03433D3274738E0008879F6 /* UIImageView+Downloader.swift */; };
 		A0A35F08274494A800040D8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A35F07274494A800040D8B /* AppDelegate.swift */; };
 		A0A35F0A274494A800040D8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A35F09274494A800040D8B /* SceneDelegate.swift */; };
 		A0A35F0C274494A800040D8B /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A35F0B274494A800040D8B /* ProductsListViewController.swift */; };
@@ -50,6 +52,8 @@
 		A03433C927461084008879F6 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		A03433CD27472CE9008879F6 /* UICollectionViewDiffableDataSource+Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewDiffableDataSource+Product.swift"; sourceTree = "<group>"; };
 		A03433CF27472F16008879F6 /* ProductsList+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductsList+Layout.swift"; sourceTree = "<group>"; };
+		A03433D127473647008879F6 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		A03433D3274738E0008879F6 /* UIImageView+Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Downloader.swift"; sourceTree = "<group>"; };
 		A0A35F04274494A800040D8B /* MeLi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeLi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A35F07274494A800040D8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0A35F09274494A800040D8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 				A0016D4A2745228E002F497E /* Constants.swift */,
 				A024583F2745DC500038BCD4 /* Extensions.swift */,
 				A03433C52745F2E4008879F6 /* ConfigurableCell.swift */,
+				A03433D127473647008879F6 /* ImageDownloader.swift */,
+				A03433D3274738E0008879F6 /* UIImageView+Downloader.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -276,9 +282,11 @@
 				A03433CB27461084008879F6 /* ProductCollectionViewCell.swift in Sources */,
 				A0016D5327452F66002F497E /* Product.swift in Sources */,
 				A0016D4E274529B5002F497E /* MeLiAPI.swift in Sources */,
+				A03433D4274738E0008879F6 /* UIImageView+Downloader.swift in Sources */,
 				A03433CE27472CE9008879F6 /* UICollectionViewDiffableDataSource+Product.swift in Sources */,
 				A0016D59274544EF002F497E /* ProductsList+UISearchBarDelegate.swift in Sources */,
 				A03433C62745F2E4008879F6 /* ConfigurableCell.swift in Sources */,
+				A03433D227473647008879F6 /* ImageDownloader.swift in Sources */,
 				A0016D55274530B4002F497E /* ProductsListViewModel.swift in Sources */,
 				A024583E2745DBAD0038BCD4 /* MeLiAPI+Extensions.swift in Sources */,
 				A0A35F08274494A800040D8B /* AppDelegate.swift in Sources */,
