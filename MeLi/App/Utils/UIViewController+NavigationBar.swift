@@ -20,8 +20,8 @@ extension UIViewController {
         appearance.backgroundColor = UIColor(named: "primary")
         appearance.shadowImage = UIImage()
         let titleTextAttributes: [NSAttributedString.Key : Any] = [.foregroundColor: Constants.textForegroundColor,
-                                                                   .font: Constants.harabaraFontWithSize(34) as Any]
-        appearance.largeTitleTextAttributes = titleTextAttributes
+                                                                   .font: Constants.harabaraFontWithSize(20) as Any]
+        appearance.titleTextAttributes = titleTextAttributes
         
         navigationController.navigationBar.standardAppearance = appearance
         navigationController.navigationBar.scrollEdgeAppearance = appearance

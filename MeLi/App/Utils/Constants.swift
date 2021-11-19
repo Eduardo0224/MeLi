@@ -18,5 +18,9 @@ struct Constants {
     
     // MARK: - Fonts
     static let harabaraFontWithSize: (CGFloat) -> UIFont? = { size in UIFont(name: "Harabara Mais Demo", size: size) }
+    
+    enum ReuseIdentifier: String {
+        case product = "ProductCollectionViewCell"
+    }
 }
 

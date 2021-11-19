@@ -13,8 +13,17 @@
 		A0016D492744AEB4002F497E /* Harabara Mais Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0016D482744AEB4002F497E /* Harabara Mais Demo.otf */; };
 		A0016D4B2745228E002F497E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0016D4A2745228E002F497E /* Constants.swift */; };
 		A0016D4E274529B5002F497E /* MeLiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0016D4D274529B5002F497E /* MeLiAPI.swift */; };
+		A0016D5127452E2C002F497E /* ProductsListConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0016D5027452E2C002F497E /* ProductsListConnection.swift */; };
+		A0016D5327452F66002F497E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0016D5227452F66002F497E /* Product.swift */; };
+		A0016D55274530B4002F497E /* ProductsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0016D54274530B4002F497E /* ProductsListViewModel.swift */; };
+		A0016D5727453A9F002F497E /* ProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0016D5627453A9F002F497E /* ProductsResponse.swift */; };
+		A0016D59274544EF002F497E /* ProductsList+UISearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0016D58274544EF002F497E /* ProductsList+UISearchBarDelegate.swift */; };
 		A024583E2745DBAD0038BCD4 /* MeLiAPI+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A024583D2745DBAD0038BCD4 /* MeLiAPI+Extensions.swift */; };
 		A02458402745DC500038BCD4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A024583F2745DC500038BCD4 /* Extensions.swift */; };
+		A03433C62745F2E4008879F6 /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03433C52745F2E4008879F6 /* ConfigurableCell.swift */; };
+		A03433CB27461084008879F6 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03433C927461084008879F6 /* ProductCollectionViewCell.swift */; };
+		A03433CE27472CE9008879F6 /* UICollectionViewDiffableDataSource+Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03433CD27472CE9008879F6 /* UICollectionViewDiffableDataSource+Product.swift */; };
+		A03433D027472F17008879F6 /* ProductsList+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03433CF27472F16008879F6 /* ProductsList+Layout.swift */; };
 		A0A35F08274494A800040D8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A35F07274494A800040D8B /* AppDelegate.swift */; };
 		A0A35F0A274494A800040D8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A35F09274494A800040D8B /* SceneDelegate.swift */; };
 		A0A35F0C274494A800040D8B /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A35F0B274494A800040D8B /* ProductsListViewController.swift */; };
@@ -30,8 +39,17 @@
 		A0016D482744AEB4002F497E /* Harabara Mais Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Harabara Mais Demo.otf"; sourceTree = "<group>"; };
 		A0016D4A2745228E002F497E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A0016D4D274529B5002F497E /* MeLiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeLiAPI.swift; sourceTree = "<group>"; };
+		A0016D5027452E2C002F497E /* ProductsListConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListConnection.swift; sourceTree = "<group>"; };
+		A0016D5227452F66002F497E /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		A0016D54274530B4002F497E /* ProductsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewModel.swift; sourceTree = "<group>"; };
+		A0016D5627453A9F002F497E /* ProductsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsResponse.swift; sourceTree = "<group>"; };
+		A0016D58274544EF002F497E /* ProductsList+UISearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductsList+UISearchBarDelegate.swift"; sourceTree = "<group>"; };
 		A024583D2745DBAD0038BCD4 /* MeLiAPI+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeLiAPI+Extensions.swift"; sourceTree = "<group>"; };
 		A024583F2745DC500038BCD4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A03433C52745F2E4008879F6 /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
+		A03433C927461084008879F6 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		A03433CD27472CE9008879F6 /* UICollectionViewDiffableDataSource+Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewDiffableDataSource+Product.swift"; sourceTree = "<group>"; };
+		A03433CF27472F16008879F6 /* ProductsList+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductsList+Layout.swift"; sourceTree = "<group>"; };
 		A0A35F04274494A800040D8B /* MeLi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeLi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A35F07274494A800040D8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0A35F09274494A800040D8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +94,10 @@
 			isa = PBXGroup;
 			children = (
 				A0A35F0B274494A800040D8B /* ProductsListViewController.swift */,
+				A03433CF27472F16008879F6 /* ProductsList+Layout.swift */,
+				A0016D58274544EF002F497E /* ProductsList+UISearchBarDelegate.swift */,
 				A0A35F0D274494A800040D8B /* ProductsList.storyboard */,
+				A03433C927461084008879F6 /* ProductCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -84,6 +105,9 @@
 		A0016D3B27449FE9002F497E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A0016D5227452F66002F497E /* Product.swift */,
+				A0016D5627453A9F002F497E /* ProductsResponse.swift */,
+				A03433CD27472CE9008879F6 /* UICollectionViewDiffableDataSource+Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -91,6 +115,7 @@
 		A0016D3C27449FF0002F497E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A0016D54274530B4002F497E /* ProductsListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -117,6 +142,7 @@
 				A0016D432744A6F9002F497E /* UIViewController+NavigationBar.swift */,
 				A0016D4A2745228E002F497E /* Constants.swift */,
 				A024583F2745DC500038BCD4 /* Extensions.swift */,
+				A03433C52745F2E4008879F6 /* ConfigurableCell.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -141,6 +167,7 @@
 		A0016D4F27452DEF002F497E /* Connection */ = {
 			isa = PBXGroup;
 			children = (
+				A0016D5027452E2C002F497E /* ProductsListConnection.swift */,
 			);
 			path = Connection;
 			sourceTree = "<group>";
@@ -246,13 +273,22 @@
 			files = (
 				A0A35F0C274494A800040D8B /* ProductsListViewController.swift in Sources */,
 				A0016D402744A221002F497E /* StoryboardedProtocol.swift in Sources */,
+				A03433CB27461084008879F6 /* ProductCollectionViewCell.swift in Sources */,
+				A0016D5327452F66002F497E /* Product.swift in Sources */,
 				A0016D4E274529B5002F497E /* MeLiAPI.swift in Sources */,
+				A03433CE27472CE9008879F6 /* UICollectionViewDiffableDataSource+Product.swift in Sources */,
+				A0016D59274544EF002F497E /* ProductsList+UISearchBarDelegate.swift in Sources */,
+				A03433C62745F2E4008879F6 /* ConfigurableCell.swift in Sources */,
+				A0016D55274530B4002F497E /* ProductsListViewModel.swift in Sources */,
 				A024583E2745DBAD0038BCD4 /* MeLiAPI+Extensions.swift in Sources */,
 				A0A35F08274494A800040D8B /* AppDelegate.swift in Sources */,
 				A0016D4B2745228E002F497E /* Constants.swift in Sources */,
+				A0016D5727453A9F002F497E /* ProductsResponse.swift in Sources */,
 				A0016D442744A6F9002F497E /* UIViewController+NavigationBar.swift in Sources */,
 				A0A35F0A274494A800040D8B /* SceneDelegate.swift in Sources */,
+				A0016D5127452E2C002F497E /* ProductsListConnection.swift in Sources */,
 				A02458402745DC500038BCD4 /* Extensions.swift in Sources */,
+				A03433D027472F17008879F6 /* ProductsList+Layout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +456,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -450,7 +486,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
