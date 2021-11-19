@@ -17,12 +17,14 @@ struct Product: Codable, Hashable {
     let id: String
     let name: String
     let price: Int
+    let thumbnail: String
     
     // MARK: - Enums
     enum CodingKeys: String, CodingKey {
         case id
         case name = "title"
         case price
+        case thumbnail
     }
     
     public func hash(into hasher: inout Hasher) {

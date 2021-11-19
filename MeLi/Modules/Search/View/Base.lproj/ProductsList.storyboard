@@ -27,36 +27,36 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6aB-HY-veQ" userLabel="Main Collection View">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="background_product"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yg9-gj-4Bm">
-                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="itemSize" width="214" height="281"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCollectionViewCell" id="1be-2g-sAD" customClass="ProductCollectionViewCell" customModule="MeLi" customModuleProvider="target">
-                                        <rect key="frame" x="104.5" y="0.0" width="205" height="325"/>
+                                        <rect key="frame" x="100" y="0.0" width="214" height="281"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2F7-oB-Aag">
-                                            <rect key="frame" x="0.0" y="0.0" width="205" height="325"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="214" height="281"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9on-CG-7ve" userLabel="Root Stack View">
-                                                    <rect key="frame" x="0.0" y="0.0" width="205" height="325"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="214" height="281"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GUe-tx-GSf" userLabel="Product Image View">
-                                                            <rect key="frame" x="12" y="12" width="181" height="253.5"/>
+                                                            <rect key="frame" x="12" y="12" width="190" height="202.5"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qku-LV-6Tk" userLabel="Title Label">
-                                                            <rect key="frame" x="12" y="273.5" width="181" height="20"/>
-                                                            <fontDescription key="fontDescription" name="HarabaraMaisBold-HarabaraMaisBold" family="Harabara Mais Demo" pointSize="18"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qku-LV-6Tk" userLabel="Title Label">
+                                                            <rect key="frame" x="12" y="222.5" width="190" height="22.5"/>
+                                                            <fontDescription key="fontDescription" name="HarabaraMaisBold-HarabaraMaisBold" family="Harabara Mais Demo" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfk-Nw-x0B" userLabel="Price Label">
-                                                            <rect key="frame" x="12" y="301.5" width="181" height="11.5"/>
-                                                            <fontDescription key="fontDescription" name="HarabaraMaisBold-HarabaraMaisBold" family="Harabara Mais Demo" pointSize="10"/>
+                                                            <rect key="frame" x="12" y="253" width="190" height="16"/>
+                                                            <fontDescription key="fontDescription" name="HarabaraMaisBold-HarabaraMaisBold" family="Harabara Mais Demo" pointSize="14"/>
                                                             <color key="textColor" systemColor="systemGrayColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -64,7 +64,7 @@
                                                     <directionalEdgeInsets key="directionalLayoutMargins" top="12" leading="12" bottom="12" trailing="12"/>
                                                 </stackView>
                                             </subviews>
-                                            <color key="backgroundColor" name="background_product"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="9on-CG-7ve" secondAttribute="trailing" id="9zI-l5-Emc"/>
                                                 <constraint firstAttribute="bottom" secondItem="9on-CG-7ve" secondAttribute="bottom" id="VUM-pD-Pi5"/>
@@ -72,7 +72,7 @@
                                                 <constraint firstItem="9on-CG-7ve" firstAttribute="top" secondItem="2F7-oB-Aag" secondAttribute="top" id="usu-Gy-qRm"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="205" height="325"/>
+                                        <size key="customSize" width="214" height="281"/>
                                         <connections>
                                             <outlet property="priceLabel" destination="tfk-Nw-x0B" id="HVd-mw-byP"/>
                                             <outlet property="productImageView" destination="GUe-tx-GSf" id="GD7-4U-DgP"/>

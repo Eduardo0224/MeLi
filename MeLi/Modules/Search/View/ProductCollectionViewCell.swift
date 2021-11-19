@@ -33,5 +33,6 @@ final class ProductCollectionViewCell: UICollectionViewCell, ConfigurableCell {
             let formattedValue = formatter.string(from: number)
             priceLabel.text = formattedValue
         }
+        productImageView.downloadImage(from: product?.thumbnail ?? "")
     }
 }
