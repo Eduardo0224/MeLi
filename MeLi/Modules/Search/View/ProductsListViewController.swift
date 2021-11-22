@@ -38,6 +38,7 @@ final class ProductsListViewController: UIViewController {
     private func setupCollectionView() {
         mainCollectionView.contentInset = .init(top: 5, left: 0, bottom: 0, right: 0)
         mainCollectionView.collectionViewLayout = customLayout
+        mainCollectionView.delegate = self
     }
     
     private func configureDataSource() {

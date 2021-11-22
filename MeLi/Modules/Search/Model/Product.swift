@@ -11,12 +11,20 @@ enum ProductSection: Hashable {
     case main
 }
 
-struct Product: Codable, Hashable {
+protocol ProductBase: Codable {
     
     // MARK: - Properties
-    let id: String
-    let name: String
-    let price: Int
+    var id: String { get set }
+    var name: String { get set }
+    var price: Double { get set }
+}
+
+struct Product: ProductBase, Hashable {
+    
+    // MARK: - Properties
+    var id: String
+    var name: String
+    var price: Double
     let thumbnail: String
     
     // MARK: - Enums

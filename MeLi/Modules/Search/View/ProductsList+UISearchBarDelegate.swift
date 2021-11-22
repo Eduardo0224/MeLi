@@ -14,13 +14,13 @@ extension ProductsListViewController: UISearchBarDelegate {
         searchBar.showsCancelButton = true
     }
     
-    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         guard let text = searchBar.searchTextField.text,
               !text.isEmpty
         else { return }
         currentSearchTask?.cancel()
         currentSearchTask = viewModel.getProductBy(
-            criteria: searchBar.searchTextField.text ?? "",
+            criteria: searchText,
             onComplete: {
                 self.applySnapshot(animatingDifferences: true)
             },
