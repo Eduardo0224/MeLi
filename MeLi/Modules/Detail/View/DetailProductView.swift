@@ -11,6 +11,7 @@ struct DetailProductView: View {
     
     // MARK: - Properties
     @StateObject private var viewModel = DetailProductViewModel()
+    @State private var showErrorAlert = false
     @Environment(\.presentationMode) var presentationMode
     private var detailProductId = ""
     
@@ -102,9 +103,12 @@ struct DetailProductView: View {
             .padding(.top, 16)
             loaderView
         }
+        .alert(isPresented: $showErrorAlert, content: {
+            getErrorAlert()
+        })
         .onReceive(viewModel.$requestError, perform: { error in
             if error != nil {
-                presentationMode.wrappedValue.dismiss()
+                showErrorAlert = true
             }
         })
         .onAppear {
@@ -132,6 +136,15 @@ extension DetailProductView {
                 EmptyView()
             }
         }
+    }
+    
+    private func getErrorAlert() -> Alert {
+        Alert(title: Text("¡Ha habido un error!"),
+              message: Text("No fue posible realizar la búsqueda"),
+              dismissButton: .default(Text("Volver"),
+                                      action: {
+            presentationMode.wrappedValue.dismiss()
+        }))
     }
 }
 
