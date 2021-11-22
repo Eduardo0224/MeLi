@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="soH-Zu-g41">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Harabara Mais Demo.otf">
+            <string>HarabaraMaisBold-HarabaraMaisBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Products List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ProductsListViewController" id="BYZ-38-t0r" customClass="ProductsListViewController" customModule="MeLi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6aB-HY-veQ" userLabel="Main Collection View">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" name="background_product"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yg9-gj-4Bm">
+                                    <size key="itemSize" width="214" height="281"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCollectionViewCell" id="1be-2g-sAD" customClass="ProductCollectionViewCell" customModule="MeLi" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="0.0" width="214" height="281"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2F7-oB-Aag">
+                                            <rect key="frame" x="0.0" y="0.0" width="214" height="281"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9on-CG-7ve" userLabel="Root Stack View">
+                                                    <rect key="frame" x="0.0" y="0.0" width="214" height="281"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GUe-tx-GSf" userLabel="Product Image View">
+                                                            <rect key="frame" x="12" y="12" width="190" height="140.5"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qku-LV-6Tk" userLabel="Title Label">
+                                                            <rect key="frame" x="12" y="160.5" width="190" height="73.5"/>
+                                                            <fontDescription key="fontDescription" name="HarabaraMaisBold-HarabaraMaisBold" family="Harabara Mais Demo" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfk-Nw-x0B" userLabel="Price Label">
+                                                            <rect key="frame" x="12" y="242" width="190" height="27"/>
+                                                            <fontDescription key="fontDescription" name="HarabaraMaisBold-HarabaraMaisBold" family="Harabara Mais Demo" pointSize="24"/>
+                                                            <color key="textColor" systemColor="systemGrayColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="GUe-tx-GSf" firstAttribute="height" secondItem="9on-CG-7ve" secondAttribute="height" multiplier="0.5" id="sDV-9h-Gqh"/>
+                                                    </constraints>
+                                                    <directionalEdgeInsets key="directionalLayoutMargins" top="12" leading="12" bottom="12" trailing="12"/>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="9on-CG-7ve" secondAttribute="trailing" id="9zI-l5-Emc"/>
+                                                <constraint firstAttribute="bottom" secondItem="9on-CG-7ve" secondAttribute="bottom" id="VUM-pD-Pi5"/>
+                                                <constraint firstItem="9on-CG-7ve" firstAttribute="leading" secondItem="2F7-oB-Aag" secondAttribute="leading" id="eB6-ZH-9DW"/>
+                                                <constraint firstItem="9on-CG-7ve" firstAttribute="top" secondItem="2F7-oB-Aag" secondAttribute="top" id="usu-Gy-qRm"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="214" height="281"/>
+                                        <connections>
+                                            <outlet property="priceLabel" destination="tfk-Nw-x0B" id="HVd-mw-byP"/>
+                                            <outlet property="productImageView" destination="GUe-tx-GSf" id="GD7-4U-DgP"/>
+                                            <outlet property="titleLabel" destination="Qku-LV-6Tk" id="FZR-MH-Wnh"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6aB-HY-veQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kg6-n7-lIg"/>
+                            <constraint firstAttribute="bottom" secondItem="6aB-HY-veQ" secondAttribute="bottom" id="kps-ou-aB7"/>
+                            <constraint firstItem="6aB-HY-veQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rGI-nT-5sH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6aB-HY-veQ" secondAttribute="trailing" id="tIX-P6-7iC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Fb-zz-Eyj"/>
+                    <connections>
+                        <outlet property="mainCollectionView" destination="6aB-HY-veQ" id="eSY-59-dDS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942.02898550724649" y="83.705357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vHB-Jm-YaX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="soH-Zu-g41" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qxs-by-NHm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jbi-6j-Ji0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gjs-zx-26l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="background_product">
+            <color red="0.94901960784313721" green="0.95686274509803926" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

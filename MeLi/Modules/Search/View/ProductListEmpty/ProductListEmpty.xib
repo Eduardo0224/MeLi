@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Harabara Mais Demo.otf">
+            <string>HarabaraMaisBold-HarabaraMaisBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProductListEmpty" customModule="MeLi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="303"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRW-oP-z4b" userLabel="Main View">
+                    <rect key="frame" x="41.5" y="57.5" width="331" height="188.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Umh-aO-b9M" userLabel="Root Stack View">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="188.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4gx-TE-eUP" userLabel="Search Image View">
+                                    <rect key="frame" x="130.5" y="-1.5" width="70" height="73"/>
+                                    <color key="tintColor" systemColor="systemGray5Color"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70" id="IvN-wW-tqx"/>
+                                        <constraint firstAttribute="width" secondItem="4gx-TE-eUP" secondAttribute="height" multiplier="1:1" id="zFS-yw-NgN"/>
+                                    </constraints>
+                                    <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Busca el producto que quieras" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqo-wv-bG9" userLabel="Title Label">
+                                    <rect key="frame" x="35.5" y="78" width="260.5" height="67"/>
+                                    <fontDescription key="fontDescription" name="HarabaraMaisBold-HarabaraMaisBold" family="Harabara Mais Demo" pointSize="30"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tenemos todos los productos que necesitas al alcance de tu mano" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oC-iu-OXV" userLabel="Description Label">
+                                    <rect key="frame" x="1" y="153" width="329.5" height="35.5"/>
+                                    <fontDescription key="fontDescription" name="HarabaraMaisBold-HarabaraMaisBold" family="Harabara Mais Demo" pointSize="16"/>
+                                    <color key="textColor" systemColor="systemGray3Color"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Umh-aO-b9M" secondAttribute="trailing" id="XCf-wt-JjO"/>
+                        <constraint firstItem="Umh-aO-b9M" firstAttribute="top" secondItem="VRW-oP-z4b" secondAttribute="top" id="e85-Q8-fZU"/>
+                        <constraint firstItem="Umh-aO-b9M" firstAttribute="leading" secondItem="VRW-oP-z4b" secondAttribute="leading" id="huU-ib-528"/>
+                        <constraint firstAttribute="bottom" secondItem="Umh-aO-b9M" secondAttribute="bottom" id="qkE-Em-fP0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="VRW-oP-z4b" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Qtq-Fh-K9c"/>
+                <constraint firstItem="VRW-oP-z4b" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="Sa0-UC-Jww"/>
+                <constraint firstItem="VRW-oP-z4b" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="dMF-nr-kcA"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="7oC-iu-OXV" id="jkP-lg-66U"/>
+                <outlet property="iconImageView" destination="4gx-TE-eUP" id="qL2-ct-Gkf"/>
+                <outlet property="titleLabel" destination="fqo-wv-bG9" id="RlS-4E-nG2"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="116.85267857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
