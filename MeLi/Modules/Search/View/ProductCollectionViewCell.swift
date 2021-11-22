@@ -31,7 +31,7 @@ final class ProductCollectionViewCell: UICollectionViewCell, ConfigurableCell {
             formatter.numberStyle = .decimal
             let number = NSNumber(value: price)
             let formattedValue = formatter.string(from: number)
-            priceLabel.text = formattedValue
+            priceLabel.text = "$" + (formattedValue ?? "")
         }
         productImageView.downloadImage(from: product?.thumbnail ?? "")
     }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension Date {
     
@@ -38,4 +39,30 @@ extension Data {
     }
 }
 
+
+extension UICollectionView {
+    
+    // MARK: - Enums
+    enum ViewName: String {
+        case noProducts = "ProductListEmpty"
+    }
+    
+    // MARK: - Custom Functions
+    func setEmptyView<T: UIView>(withName name: ViewName) -> T? {
+        if let viewFromXib = Bundle.main.loadNibNamed(name.rawValue, owner: self, options: nil)?.first as? UIView {
+            viewFromXib.frame = .init(origin: .init(x: 0,y :0), size: .init(width: bounds.size.width, height: bounds.size.height))
+            backgroundView = viewFromXib
+            return viewFromXib as? T
+        }
+        return nil
+    }
+    
+    func removeEmptyView() {
+        backgroundView = nil
+    }
+    
+    func indexPathExists(_ indexPath: IndexPath) -> Bool {
+        return !(indexPath.section >= self.numberOfSections || indexPath.row >= self.numberOfItems(inSection: indexPath.section))
+    }
+}
 

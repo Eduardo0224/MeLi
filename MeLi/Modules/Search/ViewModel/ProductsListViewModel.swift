@@ -16,16 +16,20 @@ final class ProductsListViewModel {
     
     // MARK: - Custom Functions
     func getProductBy(criteria textCriteria: String,
-                      onComplete: @escaping () -> Void,
+                      onComplete: @escaping (_ resultsCount: Int) -> Void,
                       onFailure: @escaping (MeLiAPI.NetworkError) -> Void) -> URLSessionTask? {
         connection.getProductBy(criteria: textCriteria.trimmingCharacters(in: .whitespacesAndNewlines)) { result in
             switch result {
                 case .success(let response):
                     self.products = response.results
-                    onComplete()
+                    onComplete(self.products.count)
                 case .failure(let error):
                     onFailure(error)
             }
         }
+    }
+    
+    func clearProductList() {
+        products = []
     }
 }

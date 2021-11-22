@@ -16,26 +16,32 @@ extension ProductsListViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         guard let text = searchBar.searchTextField.text,
-              !text.isEmpty
-        else { return }
+              !text.isEmpty else {
+            currentSearchTask?.cancel()
+            currentSearchTask = nil
+            searchBarCancelButtonClicked(searchBar)
+            return
+        }
         currentSearchTask?.cancel()
         currentSearchTask = viewModel.getProductBy(
             criteria: searchText,
-            onComplete: {
-                self.applySnapshot(animatingDifferences: true)
+            onComplete: { count in
+                let hasResults = count == 0
+                if hasResults {
+                    searchBar.resignFirstResponder()
+                }
+                self.applySnapshot(animatingDifferences: true, hasResults: hasResults)
             },
             onFailure: { error in })
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        guard let text = searchBar.searchTextField.text, !text.isEmpty else {
-            endEditing(searchBar)
-            return
-        }
         endEditing(searchBar)
     }
     
     private func endEditing(_ searchBar: UISearchBar) {
+        viewModel.clearProductList()
+        applySnapshot(animatingDifferences: true)
         searchBar.showsCancelButton = false
         searchBar.endEditing(true)
     }
